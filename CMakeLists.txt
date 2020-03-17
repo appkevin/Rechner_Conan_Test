@@ -18,5 +18,6 @@ endif()
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
+ADD_LIBRARY(Rechner_Conan_Test Rechner.c)
 add_executable(Rechner Rechner.c)
 target_link_libraries(Rechner ${CONAN_LIBS})
